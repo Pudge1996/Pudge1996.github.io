@@ -1,931 +1,367 @@
-<!doctype html>
-
-
-
+<!DOCTYPE html>
+<html lang=zh-Hans>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="null">
+  <meta name="keywords" content="undefined">
   
-
-
-<html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Pudge1996, Pudge" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pudge&#39;s Blog">
-<meta property="og:url" content="http://pudge1996.github.io/archives/2016/page/2/index.html">
-<meta property="og:site_name" content="Pudge&#39;s Blog">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pudge&#39;s Blog">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 'Pudge',
-      author: '博主'
-    }
-  };
-</script>
-
-
-
-
-  <link rel="canonical" href="http://pudge1996.github.io/archives/2016/page/2/"/>
-
-
-<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-<style>
-    .pace .pace-progress {
-        background: #3f51b5; /*进度条颜色*/
-        height: 1px;
-    }
-    .pace .pace-progress-inner {
-         box-shadow: 0 0 10px #3f51b5, 0 0 5px     #3f51b5; /*阴影颜色*/
-    }
-    .pace .pace-activity {
-        border-top-color: #3f51b5;    /*上边框颜色*/
-        border-left-color: #3f51b5;    /*左边框颜色*/
-    }
-</style>
-  <title> 归档 | Pudge's Blog </title>
-</head>
-
-<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
+    <link rel="icon" href="">
   
     
-  
+  <title>Archiv | 小东的博客</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Pudge's Blog</span>
-      <span class="logo-line-after"><i></i></span>
+<body>
+  <header>
+  <div class="header-container">
+    <a class='logo' href="/">
+      <span>小东的博客</span>
     </a>
-  </div>
-  <p class="site-subtitle"></p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
+    <ul class="right-header">
       
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule" rel="section">
-            
-            日程
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
+        <li class="nav-item">
           
-            <a href="javascript:;" class="popup-trigger">
+            <a href="/" class="item-link">首页</a>
           
-            
-            搜索
-          </a>
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/about" class="item-link">关于</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/archives" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/tags" class="item-link">标签</a>
+          
         </li>
       
     </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 30 篇日志。 继续努力。
-    </span>
-
-    
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/07/GOOGLE-animation/" itemprop="url">
-              
-                <span itemprop="name">GOOGLE animation</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-07T19:57:52+08:00"
-              content="2016-10-07" >
-          10-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/20/New-stuff/" itemprop="url">
-              
-                <span itemprop="name">New stuff</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-20T18:59:22+08:00"
-              content="2016-09-20" >
-          09-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/17/daily-ui/" itemprop="url">
-              
-                <span itemprop="name">daily ui</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-17T14:46:10+08:00"
-              content="2016-09-17" >
-          09-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/12/Steam app/" itemprop="url">
-              
-                <span itemprop="name">Steam热卖游戏在手机上的呈现</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-12T20:41:00+08:00"
-              content="2016-09-12" >
-          09-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/11/Uploading/" itemprop="url">
-              
-                <span itemprop="name">Uploading</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-11T21:21:45+08:00"
-              content="2016-09-11" >
-          09-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/10/Switch-Effect/" itemprop="url">
-              
-                <span itemprop="name">On/Off Switch</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-10T15:21:50+08:00"
-              content="2016-09-10" >
-          09-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/09/test/" itemprop="url">
-              
-                <span itemprop="name">test</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-09T11:11:50+08:00"
-              content="2016-09-09" >
-          09-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/08/my-new-post/" itemprop="url">
-              
-                <span itemprop="name">my new post</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-08T23:52:17+08:00"
-              content="2016-09-08" >
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/08/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-08T19:49:27+08:00"
-              content="2016-09-08" >
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2016/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2016/">1</a><span class="page-number current">2</span>
-  </nav>
-
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
   </div>
+</header>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
-               alt="Pudge" />
-          <p class="site-author-name" itemprop="name">Pudge</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">30</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
+  <main id="archive">
+  <div class="content">
+        
+    
+      <div class="year-list">
+        <h3>2018</h3>
+        <ul>
           
-            <div class="site-state-item site-state-categories">
-              
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">分类</span>
-              
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">标签</span>
+            <li >
+              <time>2018/07/14</time>
+              <a href="/2018/07/14/cjjllm22y001fldbax3bmbfsu/">
+                <span>
+                    时隔差不多一年，博客被重新拾起！
+                </span>
               </a>
-            </div>
+            </li>
           
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
+        </ul>
+      </div>
+    
+      <div class="year-list">
+        <h3>2017</h3>
+        <ul>
           
-        </div>
-
+            <li >
+              <time>2017/11/19</time>
+              <a href="/2017/11/19/cjjllm22q000yldbad1yisavq/">
+                <span>
+                    分享-如何使Sketch在多标签页中打开新文档
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/11/08</time>
+              <a href="/2017/11/08/cjjllm22s0012ldba5vdbf5wm/">
+                <span>
+                    博客复活！
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/06/24</time>
+              <a href="/2017/06/24/cjjllm22z001hldba93zs4s6b/">
+                <span>
+                    最近几幅插图
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/06/10</time>
+              <a href="/2017/06/10/cjjllm22t0014ldbakl9tqpqa/">
+                <span>
+                    又一部视频
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/05/30</time>
+              <a href="/2017/05/30/cjjllm22u0016ldbab85exckm/">
+                <span>
+                    忙到踢脚之最近三件事
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/05/19</time>
+              <a href="/2017/05/19/cjjllm235001sldbavhqlgjvk/">
+                <span>
+                    脑子一热
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/05/16</time>
+              <a href="/2017/05/16/cjjllm2280005ldbab294yai0/">
+                <span>
+                    Mac上尝试更新HEXO
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/03/10</time>
+              <a href="/2017/03/10/cjjllm232001nldbayzfludso/">
+                <span>
+                    登上新大陆！WordPress！
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/03/03</time>
+              <a href="/2017/03/03/cjjllm22x001dldbap9l5c43g/">
+                <span>
+                    新插画
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2017/01/01</time>
+              <a href="/2017/01/01/cjjllm22w001bldbam3soi0lz/">
+                <span>
+                    新年快乐！
+                </span>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    
+      <div class="year-list">
+        <h3>2016</h3>
+        <ul>
+          
+            <li >
+              <time>2016/12/05</time>
+              <a href="/2016/12/05/cjjllm234001pldba95diir43/">
+                <span>
+                    皮诺曹的网页设计
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/12/04</time>
+              <a href="/2016/12/04/cjjllm22l000nldbaecgg9dfp/">
+                <span>
+                    感谢David Damour的邀请
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/12/03</time>
+              <a href="/2016/12/03/cjjllm231001lldbaj7fm5u0c/">
+                <span>
+                    最近搞的UI
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/11/07</time>
+              <a href="/2016/11/07/cjjllm230001jldbar6h1njhy/">
+                <span>
+                    本周的Voxel! (十一月07)
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/11/06</time>
+              <a href="/2016/11/06/cjjllm22q000wldbatpqa4nq9/">
+                <span>
+                    今天的战士斗巨龙！
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/11/05</time>
+              <a href="/2016/11/05/cjjllm22p000tldba23lut54f/">
+                <span>
+                    今天的卫兵VS大眼怪！
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/11/04</time>
+              <a href="/2016/11/04/cjjllm22n000rldbao6bepxol/">
+                <span>
+                    一个小车
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/11/04</time>
+              <a href="/2016/11/04/cjjllm22v0018ldbaxma5tfet/">
+                <span>
+                    我的第一个magicavoxel作品！
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/10/28</time>
+              <a href="/2016/10/28/cjjllm2250002ldbagkvpt798/">
+                <span>
+                    皮具品牌LOGO设计(课堂作业！)
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/10/19</time>
+              <a href="/2016/10/19/cjjllm22o000sldbayodt5l6g/">
+                <span>
+                    一幅卡通画
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/10/07</time>
+              <a href="/2016/10/07/cjjllm2210000ldbanm9aotac/">
+                <span>
+                    GOOGLE animation
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/20</time>
+              <a href="/2016/09/20/cjjllm2290006ldba1d7f29dz/">
+                <span>
+                    New stuff
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/17</time>
+              <a href="/2016/09/17/cjjllm22h000fldba2dnyhu6r/">
+                <span>
+                    daily ui
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/12</time>
+              <a href="/2016/09/12/cjjllm22a0007ldbaa208w8ej/">
+                <span>
+                    Steam热卖游戏在手机上的呈现
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/11</time>
+              <a href="/2016/09/11/cjjllm22c000cldbay55di9ni/">
+                <span>
+                    Uploading
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/10</time>
+              <a href="/2016/09/10/cjjllm22b000aldbarxyr5xn8/">
+                <span>
+                    On/Off Switch
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/09</time>
+              <a href="/2016/09/09/cjjllm22k000lldbas3als4py/">
+                <span>
+                    test
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/08</time>
+              <a href="/2016/09/08/cjjllm22j000jldba6afr4c9l/">
+                <span>
+                    my new post
+                </span>
+              </a>
+            </li>
+          
+            <li >
+              <time>2016/09/08</time>
+              <a href="/2016/09/08/cjjllm22i000hldbatjeoxyhb/">
+                <span>
+                    Hello World
+                </span>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
         
-        
+  </div>
+</main>
 
-        
-        
-
-      </section>
-
-      
-
+  <footer>
+  <div class="copyright">
+    <div>
+      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
     </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-
-  </span>
-  <span class="author" itemprop="copyrightHolder">Pudge</span>
-</div>
-
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站总访问量<span id="busuanzi_value_site_uv"></span>次
-</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+    <div>
+      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
     </div>
   </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
+</footer>
 
 
 
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
-
-
-
-  
-  
-
-  
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = false;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = decodeURIComponent(data.url);
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title >= 0 || index_content >= 0 ){
-                                isMatch = true;
-								if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            } 
-							
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-
-  
-
-  
-
-  
-
-  
-
- 
 </body>
 </html>

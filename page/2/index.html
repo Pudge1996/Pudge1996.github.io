@@ -1,1694 +1,433 @@
-<!doctype html>
-
-
-
+<!DOCTYPE html>
+<html lang=zh-Hans>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="null">
+  <meta name="keywords" content="undefined">
   
-
-
-<html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Pudge1996, Pudge" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pudge&#39;s Blog">
-<meta property="og:url" content="http://pudge1996.github.io/page/2/index.html">
-<meta property="og:site_name" content="Pudge&#39;s Blog">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pudge&#39;s Blog">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 'Pudge',
-      author: '博主'
-    }
-  };
-</script>
-
-
-
-
-  <link rel="canonical" href="http://pudge1996.github.io/page/2/"/>
-
-
-<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-<style>
-    .pace .pace-progress {
-        background: #3f51b5; /*进度条颜色*/
-        height: 1px;
-    }
-    .pace .pace-progress-inner {
-         box-shadow: 0 0 10px #3f51b5, 0 0 5px     #3f51b5; /*阴影颜色*/
-    }
-    .pace .pace-activity {
-        border-top-color: #3f51b5;    /*上边框颜色*/
-        border-left-color: #3f51b5;    /*左边框颜色*/
-    }
-</style>
-  <title> Pudge's Blog </title>
-</head>
-
-<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
+    <link rel="icon" href="">
   
     
-  
+  <title>小东的博客</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Pudge's Blog</span>
-      <span class="logo-line-after"><i></i></span>
+<body>
+  <header>
+  <div class="header-container">
+    <a class='logo' href="/">
+      <span>小东的博客</span>
     </a>
-  </div>
-  <p class="site-subtitle"></p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
+    <ul class="right-header">
       
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule" rel="section">
-            
-            日程
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
+        <li class="nav-item">
           
-            <a href="javascript:;" class="popup-trigger">
+            <a href="/" class="item-link active">首页</a>
           
-            
-            搜索
-          </a>
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/about" class="item-link">关于</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/archives" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/tags" class="item-link">标签</a>
+          
         </li>
       
     </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/01/新年快乐！/" itemprop="url">
-                  新年快乐！
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-01T16:40:05+08:00" content="2017-01-01">
-              2017-01-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Illustration/" itemprop="url" rel="index">
-                    <span itemprop="name">Illustration</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>2017新年快乐！<br>真是一眨眼的时间大三上学期就过去了，真的很快，也很忙。11月多开始代别人的设计作业，赚了一点学费。。。<br>忙起来的时候真是一天只有吃饭，睡觉，做作业。。。<br>同时我最近也点了几个技能点给AI，学会了一点插画的技法。。。</p>
-<p>查看图片，请Click入「阅读全文」啦！<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/01/新年快乐！/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/05/皮诺曹的网页设计/" itemprop="url">
-                  皮诺曹的网页设计
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-05T09:32:30+08:00" content="2016-12-05">
-              2016-12-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index">
-                    <span itemprop="name">Web</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>说好的网页设计，本来几个星期前已经做完大概，主要因为那服务里面的6个icon一直没时间想。而且以前一直用PS做icon，最近学习了一点AI，这次是用AI做的，感觉AI里做这些还是比PS好用啊。。</p>
-<p>为不影响版面，请Click入「阅读全文」<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/05/皮诺曹的网页设计/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/04/“感谢David-Damour的邀请/" itemprop="url">
-                  感谢David Damour的邀请
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-04T11:09:20+08:00" content="2016-12-04">
-              2016-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近终于获得Dribbble的邀请了，感谢David Damour的邀请啦！制作了一个蛋糕作为First shot<br><img src="https://lh3.googleusercontent.com/pVJen5UZgkCbXPiem7iy5miR_dbXuvNTg1cZ7Nty1d_lk6qMUH1DCXd70J2sTbYGR2_czQeCMknlNVkhvuo-zAKGlBc2Sv5runfhiY4EuXc7AIYT_4LaSCX1tisP4_akk8hO76Bs3vFZ9QXoMbCFW34vON51SEVnN95NYXxa1mQtOOdJEso2J6Y4ssyizzHaa74ZvHQSfL49mySUBog--RnDX6qI0va967FANuLWBqYeM0ICZiNYUOKXhbTpeRzZSVcB5Kke8PMxUUAEKgEYa_WotLk3bReRHhQR5d-kY9fmvgZ-_PgusBkgb4-M1py2D0-io-lei_7l3CX62x2xEG-OApR2hybiAbZ1PqdyHf8zrO7AD9TDFpy7kEUgJa2ZCgiydGFNXHyZYAG0GIyabPPKpdjIk6tj49waO-kMMExj6K0q1eVz0IEpB0oogr-Eo2gopO2mOk7QpWcCKe75awLj1a7VCuOWI2oJ29V4ZQOWnMl3S-YsAVGx-whu2H5Ogpq0vHfZtv-lEekF_OiweqKcCMrR-pifIGbFfKQ3tC-RnpvRGLF6TWfuNgKKCFQYrvmwRwGiR4l2LO8O9Dl1mdImf0uJq-MMceIVGO31eUWxi4Ho=w800-h600-no" alt="" title="THANK YOU"></p>
-<p>网页下次POST</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/03/最近搞的UI/" itemprop="url">
-                  最近搞的UI
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-03T01:19:45+08:00" content="2016-12-03">
-              2016-12-03
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>最近忙碌+吃土中，帮外校大四做了一小套UI。。<br>长图，为不影响版面，请Click入「阅读全文」<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/03/最近搞的UI/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/07/本周的Voxel-Nov-07/" itemprop="url">
-                  本周的Voxel! (十一月07)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-07T23:55:39+08:00" content="2016-11-07">
-              2016-11-07
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="今天是星期一-从今开始一周的Voxel！就放在一篇POST上啦！"><a href="#今天是星期一-从今开始一周的Voxel！就放在一篇POST上啦！" class="headerlink" title="今天是星期一 从今开始一周的Voxel！就放在一篇POST上啦！"></a>今天是星期一 从今开始一周的Voxel！就放在一篇POST上啦！</h3><p><img src="https://lh3.googleusercontent.com/Zx0-OhV786lTdkxeTEa0xXkB823HYVq6i-e4XNcdp5tZXwm0cCeacjTHSl36DNxjXS3b92DQCYC7VkMR9iMmJ6CRpjGJJ8oSf_W-wGO-Neyc9n_7Qqk9LmZGTALca7x42yOTh6fEdzYH2Wyj4Az6r0SzPj_5jgiOVaMBX7D8FvV3mnuPMZP-j07hIdwYZnbtUdgLYiETsrnfd5VLsFWVk31Bxgk44mE4S7hs4gFnfc2Spnm3kFJApYWO2Waa5bmKCOGOdfhJHtle0nQuLOvj8dmm1Q5YVbejv_Pzl1NaTRaP7P0MojHHRcdqjjR_rY7fDg-FsGwMuXdt2X6REvXrDTIkjmKfWHvFKKb34_WVkIkqVKHzymyafw_TXbJN4EQ9zWYRUXY9QJTuWsEEJWisKL9vHK8NA2xuj5rn_uvylKGmzrazRc7hyFrxFeAw7kkjNX453w0GucD2RJpK6RSZDnL28yG40i_jhDU5UzEJ15-TqS-HvRHtUeRQVLPSzfbJnpBV426uQi_o24oU5RRvadqMrTfu0eAfBcBi0zYJWDWPeJWedN87msdw1LWpgwCxbsw-Do5kXgYJMpctUZbgbHJ6TbkoVqSzXz2xOLy2oq6rp_ae=s950-no" alt="Nov.07"><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/07/本周的Voxel-Nov-07/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/06/今天的战士斗巨龙！/" itemprop="url">
-                  今天的战士斗巨龙！
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-06T21:08:27+08:00" content="2016-11-06">
-              2016-11-06
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>尝试了一下做巨龙，好难做啊！<br>明天试下做新的人物动态。<br><img src="https://lh3.googleusercontent.com/DAHvPUDzKFvzM4jK_j6Zm4OHPPBGRkQvC-VS5sG05fw_kN2tJfdtXkt-edB16kER4TupPPZPlxrOiBZw-0LqrEWcmTuNf9rcGMpQoBokhFP1svvcPNJAj278Y_AKNkx25L0HoDBr1SnKDnOTmF8xcT3LwzuUHaUsSHEGsrzByTs5L6QZEZuDtzH5Fck8s5jFLrbONCI7QBj2Wpb5J_apTaFsne9KuLYDsScunCdwQreIbpCG__OP-qd6ZRQ8PaQfVC8iNF3rkVyFnuW7oe40dJyyX5FocJMxruOo3kPgW_g6PdDZzTUiAKc6imSb_7LMU_QQderk_D4lHgVNPuvnCpW04FZkh4ecGN81F5hBTwo_w7AnJiF8EtMnjmZMVhhz1hBEs8TdRE3flC6NYKAb6wxCpJcet2yh961rs8_NWJJv22hjyM6oJyyuYY4IECQHgoIMp4Qw2XmyVeJbUFbRjxt3JkVM6WAn8Mb4Qx6HSgdjxp-zJD60Ibn8ESFDDuw_ExefWcYEYsCzu4sPL99oyNKB-cdPWc9-aT5bSh8trT-0hDQ5G6WVk8He_a25RXjc1Egz-kntubxapRXcT6lVq2nrrCJV5SvJ-aaQpHZ6wFlEW4qH=w1689-h950-no" alt="by Pudge"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/05/今天的卫兵VS大眼怪！/" itemprop="url">
-                  今天的卫兵VS大眼怪！
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-05T22:39:33+08:00" content="2016-11-05">
-              2016-11-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>天空城最后一名卫兵！到底能否击败大眼怪？！</p>
-<p><img src="https://lh3.googleusercontent.com/BuPgVh8CBXmRWupn245Iu32Yr0-iZE4-4H-1OzYbMfGmwBQy_1Xwe5psyzzBv2CXL47foF4DgDHlniWG-edNlfkSQWx-W5QzmFUgcOFa6D6ZECdN3-7ZGKOD7Hg93h2SYawHI_pnmuVeim8foSIfBHHIFa45dKUcqA7odgZYwb-FY9pmrZ7Tdw43jOTUmbl4eiZ7dNe-r028ERjNQJ-uenhCeDNnVRNEjFpinjCViOJF92zOKsWLDAggNPZhf3oazOZzapwNN7sSFufgM2VA_16z1lzQyq3eP2G0iIXIhthwR4qMwFjTVymX7RHdrWnanCEjcdwNyfjTxA-QmmFNXb9qpsf9iKbrtTQMfp11FOmbGpOBlATtpaEQj3e7N2UFXVngCe27bhcIWJSjM48BfnYeOnX4WBC8VdePDPBahg_rVqpX8op365-Nd_64ae124aYOUcyn57Fhss-yd2jv1aNr2I0coGZlKsdpW9HOnj1KVDi-DUyrkCbp4m2Ia29FS_T9J0DlY9EA45oQQ8dyGQp4Jxa2ovbMs8eKfWJFpuO8gcGPZuCNcvNK55k6nLDZ6aHBDKS6HpVZM3mOO6AuU1yQKYEknOM4IPhWXhNk9BrPO6Rp=w1689-h950-no" alt="by Pudge"></p>
-<blockquote>
-<blockquote>
-<p>其实击败不了啦！天空城还是会沦陷，因为我没给卫兵设定特殊能力啊！只有普通的剑盾~~</p>
-</blockquote>
-</blockquote>
-<p>(话说大眼怪的三个激光炮好违和。。)</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/04/一个小车/" itemprop="url">
-                  一个小车
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-04T22:01:10+08:00" content="2016-11-04">
-              2016-11-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天做的双层巴士！~</p>
-<p><img src="https://lh3.googleusercontent.com/VQ2jjPU_ZVEqyQyqeb99yFzwNs5D1zaVlOdsPi2U8fY9adR7o4fByZi6Qnua1RfwyjU0khk5nUFgpuJQqGW-r4XN_M8Id_Yl7Sx4v7u2ZG1Kh67DgFv6Bx8cq42W071bReWXsoCGb5rohUhZtlXxGTpRRovsON_WMP30oCj2YSO5C1qPiz7tabjaeCmcW2XgdEnyCvptt_7qMs_m3wdGDgSmUqTMuNxu_Ef2J0ou-26Hq8iAtrbCHa_97KEBWlzJq_Ap4KqJ3weTH7-OCBVBzogz_3vzrGoppzf-1CTgSAFB4g2ZYcNwwP-B7WpcXLYaWCYHFQvCfvAfsU9xJp627Qj7OLuU6XGHZqWAFruKwOhaI3hw3ztoawyM9gH65eXZap9uh9fLdCvJGMMOO3007GLIKH-sD9mes646bsjub2bIhXeGZa7qkh83HInU9cd8S1tvGmE4NLfoM2bi4vHTli-pXAOFzoFnRNi-oIsF-pbqlveY_wdK9z4tXqGkUAb96H1Mx_v4A_RNMYy-iM8mK1zfdVovA17wa6riRV-RCcNDiOXYyaM2oIjinfaeYVpekfnoe7fVb6RlZGV1No4D3QFZOiN7FONYa5I7Sw5f_0-_etAB=w1602-h901-no" alt="by Pudge"></p>
-<blockquote>
-<blockquote>
-<p>玻璃还是不会做也..</p>
-</blockquote>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/04/我的第一个magicavoxel作品！/" itemprop="url">
-                  我的第一个magicavoxel作品！
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-04T09:57:25+08:00" content="2016-11-04">
-              2016-11-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Magicavoxel/" itemprop="url" rel="index">
-                    <span itemprop="name">Magicavoxel!</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>发现这个软件很好玩，而且只有几MB！太神奇了！</p>
-<p>软件名叫Magicavoxel，能够在里面创造最大126<em>126</em>126的立方体！可以使用HSV/RGB颜色，而且能渲染出发光、玻璃、不锈钢的质感！<br><img src="https://lh3.googleusercontent.com/o_cnomg5NqRO86nBrYHs-JpeFIB9QE0imc3L0floYPh-zHTkYKbkMCxh5qapURZcrKLPo66UMkcZnSOkuZlLmdsCXLEWMzM4bXrLN7v1w5kZuNMwv3umZJIh2WYbHb1w7G1xa1Hr2kKNSbzJOjI8N_yNFrLNNoZrpJnAjqpe9ZkVQ62HQ31U5gLW3zWlhkyuKka0vcfWwMAyKmdeVjFn6hIZYGXnbr4bQ-bJ2krsy__qtpbfI5ciaH46qhWYRM4MN3E2ZiFfAxMSe36nzRG1WHYVGDM6kkRvCLjrwnfBFFxK3RC_dSzMueGEUScrpho4JVz8Brh7v5YQc784nMaQ3krMZUE7bxIIhB1O6fJ0fdHlcQZLHs-jI6DC10Kxd7E5AxxmVXriVN4Cz0XbVWtRDGn1r1wSaPOM5nwKseRCcVUHbW1iunYjN-6icaRN8RgUq1HiqVrihIqlzOw6xvS2CQNe-SstP66oMj0-eCI3CVW1wfEFkmpJ72INulgwn_83XS97PlQC40r9MHhDEXzGBdaxN4LGFikDWp3EHy3j3UIBk8Rj0y9jVypC3B8ySzckd2PhI17b91DfYyGCePY6nkllj1ynD8LVHJp080oqDMBTktMA=w615-h346-no" alt="by Pudge" title="小溪边~"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/28/Logo for Pinocchio/" itemprop="url">
-                  皮具品牌LOGO设计(课堂作业！)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-28T20:16:31+08:00" content="2016-10-28">
-              2016-10-28
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>手工皮革制品工作室的LOGO<br><img src="https://lh3.googleusercontent.com/bUgP8rW_XXWHuYQ9aTVUe_x56eupTCry1wZc2_cbYTOjwcDAqM9NQOkwNnWhHM5XfEmVydQphuNfp6DcNvEaaaduPqtccUO53daqvS0zrazeADqB-JQ25PlSeTz2pRHgEBDxazsyRG2H1o_H75fQmv2FxPqZpJ0bgnoRRwtkZ9T-87_ozVeeSC1mST3Gmj8OCr04jmLL7sMVyOWa4i1mJuvWDvCnh5e3JeNcZA8nb-7TrUr71UbW6YhAV-y0eHZgQbMIsstVe25ulHR6pgUWSlQqrAXIoiBLRhNqkL1wVj8D5XsLRnQbGNmu9Q_iiUeOclXhcpYn_D44V23o-2dluZ0pVz3qCI036xq7cjfw-Am-1A1a-SFN0tYaulBGPpDyq3iC6_0bnD9_3OfWwLW65eA_uXL9TtjFtFLQVB3bWIzcWN3Elzfg_Zw9v_cdabYV_-d0A7prow6vrvyO87aFPXcV4qOeRYj5n8VrS8uQ9YVwe7A8wW8IN96jE_xvpq9QUWs0H4tcnnuASXV0uFgVWSJorayvoll2y3wy3P1_Z56XSQNqTsx_1X8DfU_qFAvOjTD9ykBNoYPnbKM8_vH7yYtWWO2AB9EjlwRERXWZyf84MxEk=w800-h600-no" alt="Source:Pudge" title="Pinocchio"><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/28/Logo for Pinocchio/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
   </div>
+</header>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
-               alt="Pudge" />
-          <p class="site-author-name" itemprop="name">Pudge</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">30</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+  <main id='index'>
+  <div class="posts-list">
+    
+      <section>
+        <a href="/2017/01/01/cjjllm22w001bldbam3soi0lz/">
+          <h3 class='post-head'>
+            新年快乐！
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a1b70a72e6.jpg" alt="">
           </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">分类</span>
-              
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
         
-
-        <div class="links-of-author motion-element">
+        <div class="post-content">
+          
+            2017新年快乐！真是一眨眼的时间大三上学期就过去了，真的很快，也很忙。
           
         </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2017/01/01</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#摸鱼" class='tag'>摸鱼</a>
 
-        
-        
 
-        
-        
-
+          
+        </div>
       </section>
+    
+      <section>
+        <a href="/2016/12/05/cjjllm234001pldba95diir43/">
+          <h3 class='post-head'>
+            皮诺曹的网页设计
+          </h3>
+        </a>
+        
+        <div class="post-content">
+          
+            说好的网页设计，本来几个星期前已经做完大概，主要因为那服务里面的6个icon一直没时间想。而且以前一直用PS做icon，最近学习了一点AI，这次是用AI做的，感觉AI里做这些还是比PS好用啊。。
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/12/05</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#大学作品" class='tag'>大学作品</a>
 
-      
 
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/12/04/cjjllm22l000nldbaecgg9dfp/">
+          <h3 class='post-head'>
+            感谢David Damour的邀请
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a181dcb012.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            最近终于获得Dribbble的邀请了，感谢David Damour的邀请啦！制作了一个蛋糕作为First shot
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/12/04</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/12/03/cjjllm231001lldbaj7fm5u0c/">
+          <h3 class='post-head'>
+            最近搞的UI
+          </h3>
+        </a>
+        
+        <div class="post-content">
+          
+            最近忙碌+吃土中，帮外校大四做了一小套UI。。
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/12/03</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#摸鱼" class='tag'>摸鱼</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/11/07/cjjllm230001jldbar6h1njhy/">
+          <h3 class='post-head'>
+            本周的Voxel! (十一月07)
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a17a2e5cca.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            今天是星期一 从今开始一周的Voxel！就放在一篇POST上啦！
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/11/07</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/11/06/cjjllm22q000wldbatpqa4nq9/">
+          <h3 class='post-head'>
+            今天的战士斗巨龙！
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a177e8675e.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            尝试了一下做巨龙，好难做啊！
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/11/06</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/11/05/cjjllm22p000tldba23lut54f/">
+          <h3 class='post-head'>
+            今天的卫兵VS大眼怪！
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a17561c0fd.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            天空城最后一名卫兵！到底能否击败大眼怪？！
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/11/05</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/11/04/cjjllm22n000rldbao6bepxol/">
+          <h3 class='post-head'>
+            一个小车
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a173ccb8e5.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            今天做的双层巴士！~
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/11/04</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/11/04/cjjllm22v0018ldbaxma5tfet/">
+          <h3 class='post-head'>
+            我的第一个magicavoxel作品！
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a170b9aa29.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            发现这个软件很好玩，而且只有几MB！太神奇了！
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/11/04</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#Magicavoxel" class='tag'>Magicavoxel</a>
+
+
+          
+        </div>
+      </section>
+    
+      <section>
+        <a href="/2016/10/28/cjjllm2250002ldbagkvpt798/">
+          <h3 class='post-head'>
+            皮具品牌LOGO设计(课堂作业！)
+          </h3>
+        </a>
+        
+          <div class="post-img">
+            <img src="https://i.loli.net/2018/07/14/5b4a16bd49c78.png" alt="">
+          </div>
+        
+        <div class="post-content">
+          
+            手工皮革制品工作室的LOGO
+          
+        </div>
+        <div class='post-meta'>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2016/10/28</time>
+          
+          
+            <span class="seperator">|</span>
+             
+                <i class="fa fa-tag" aria-hidden="true"></i>
+              
+             
+  <a href="/tags/#大学作品" class='tag'>大学作品</a>
+
+
+          
+        </div>
+      </section>
+    
+  </div>
+  <aside>
+    
+    <div class="search">
+      <div class="content">
+        <form action="//www.google.com/search" target="_blank" class="search-form">
+          <input type="text" name="q" maxlength="20" placeholder=Suche>
+          <input type="hidden" name='sitesearch' value="http://pudge1996.github.io">
+        </form>
+      </div>
     </div>
+    
+    
+      <div class="avatar">
+        <img src="/images/avatar.png" alt="avatar">
+          
+      </div>
+    
+    
+      <div class="categories">
+        <h1>
+          Kategorien
+        </h1>
+        <div class="content">
+          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a></li></ul>
+        </div>
+      </div>
+    
+    
   </aside>
+</main>
 
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-
-  </span>
-  <span class="author" itemprop="copyrightHolder">Pudge</span>
+  <div class="paging">
+  <div class="paging-container">
+    
+    <div class='page-prev'>
+      <a href="/">zurück</a>
+    </div>
+    
+    
+    <div class='page-next'>
+      <a href="/page/3/">weiter</a>
+    </div>
+    
+  </div>
 </div>
 
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站总访问量<span id="busuanzi_value_site_uv"></span>次
-</span>
-</div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+  <footer>
+  <div class="copyright">
+    <div>
+      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
+    </div>
+    <div>
+      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
     </div>
   </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
+</footer>
 
 
 
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = false;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = decodeURIComponent(data.url);
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title >= 0 || index_content >= 0 ){
-                                isMatch = true;
-								if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            } 
-							
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-
-  
-
-  
-
-  
-
-  
-
- 
 </body>
 </html>

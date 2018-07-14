@@ -4,210 +4,210 @@
     
     <entry>
       <title><![CDATA[时隔差不多一年，博客被重新拾起！]]></title>
-      <url>%2F2018%2F07%2F14%2F%E6%97%B6%E9%9A%94%E5%B7%AE%E4%B8%8D%E5%A4%9A%E4%B8%80%E5%B9%B4%EF%BC%8C%E5%8D%9A%E5%AE%A2%E8%A2%AB%E9%87%8D%E6%96%B0%E6%8B%BE%E8%B5%B7%EF%BC%81%2F</url>
-      <content type="text"><![CDATA[上一篇博客已经是2017年11月19日的事情了，那时候我的 Hexo 博客遇到问题无法更新，碰巧那段时间毕业设计比较忙碌，就没有解决这个问题，但今天，我重新研究终端返回来的错误提示，把问题解决了！了解更多，请Click入「阅读全文」 由于时间久远，我尝试回忆起无法更新的原因：那时候好像重装了电脑，各种环境都没安装上，当我再装 Hexo 时已经返回错误提示了，并且由于我技艺不精，乱搞一通好像更麻烦了，到后面直接运行 hexo -d 都直接自动重启！所以我便抛弃了我的博客，没有再管他，今天我抱着试一试看看能不能救活我的博客，不行就算的心态打开了 Hexo 的官网。。凝视着下面的几行命令。。 好吧，当我在终端运行 npm install hexo-cli -g 时就报错了，看了下文档，安装 xcode 之后就能安装成功。cd blog 之后运行 npm install ，我之前好像装过，只是更新了一下 npm，然后运行 hexo server ，已经可以在本地正常预览，但是 hexo deploy 报错1Error: fatal: Unable to create &apos;/Volumes/Blog/.deploy_git/.git/index.lock&apos;: File exists. 提示无法创建 index.lock ，因为已经存在，那我就上网搜了下命令行删除文件的代码1rm -f .deploy_git/.git/index.lock 然后 Hexo -deploy，然后居然成功了！Hexo -g 之后刷新网站，居然更新了！至此我的 Hexo 已被修复，以后又能愉快地更新博客，安装主题瞎折腾拉！复活博客对我来说意义重大！因为这算是我大学生活的一部分。。从2016年9月的第一篇博客“Hello World”开始我摸鱼的东西就放在博客上。在 Hexo 失效这段时间我用 Medium 来写一些文章，但没有在自己博客上那么密。好吧，现在我要将 Medium 上的文章移植过来，以后继续在这折腾~]]></content>
+      <url>%2F2018%2F07%2F14%2Fcjjllm22y001fldbax3bmbfsu%2F</url>
+      <content type="text"><![CDATA[由于时间久远，我尝试回忆起无法更新的原因：那时候好像重装了电脑，各种环境都没安装上，当我再装 Hexo 时已经返回错误提示了，并且由于我技艺不精，乱搞一通好像更麻烦了，到后面直接运行 hexo -d 都直接自动重启！所以我便抛弃了我的博客，没有再管他，今天我抱着试一试看看能不能救活我的博客，不行就算的心态打开了 Hexo 的官网。。凝视着下面的几行命令。。 好吧，当我在终端运行 npm install hexo-cli -g 时就报错了，看了下文档，安装 xcode 之后就能安装成功。cd blog 之后运行 npm install ，我之前好像装过，只是更新了一下 npm，然后运行 hexo server ，已经可以在本地正常预览，但是 hexo deploy 报错1Error: fatal: Unable to create &apos;/Volumes/Blog/.deploy_git/.git/index.lock&apos;: File exists. 提示无法创建 index.lock ，因为已经存在，那我就上网搜了下命令行删除文件的代码1rm -f .deploy_git/.git/index.lock 然后 Hexo -deploy，然后居然成功了！Hexo -g 之后刷新网站，居然更新了！ 至此我的 Hexo 已被修复，以后又能愉快地更新博客，安装主题瞎折腾拉！复活博客对我来说意义重大！因为这算是我大学生活的一部分。。从2016年9月的第一篇博客“Hello World”开始我摸鱼的东西就放在博客上。在 Hexo 失效这段时间我用 Medium 来写一些文章，但没有在自己博客上那么密。好吧，现在我要将 Medium 上的文章移植过来（根据时间线），将以前的 Tags, categories, 图床都整理一遍，以后继续在这折腾~]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[分享-如何使Sketch在多标签页中打开新文档]]></title>
-      <url>%2F2017%2F11%2F19%2F%E5%88%86%E4%BA%AB-%E5%A6%82%E4%BD%95%E4%BD%BFSketch%E5%9C%A8%E5%A4%9A%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%B8%AD%E6%89%93%E5%BC%80%E6%96%B0%E6%96%87%E6%A1%A3%2F</url>
-      <content type="text"><![CDATA[经常用 Sketch 的设计师都知道，窗口模式下的 Sketch 打开新文档是默认打开一个新窗口，今天我在网上看到一个视频教程，让 Sketch 默认在新标签栏中打开新文档，而不是新窗口。视频链接在底部。了解更多，请Click入「阅读全文」默认状态下按⌘+N会打开多个窗口 ###解决方法：Step1: 在Sketch中勾选View - Show Tab Bar Step2:勾选 设置 - Dock - 打开文稿时首选标签页 - 始终 完成回到Sketch，按⌘+N，新的文稿会在新标签栏中显示 视频链接：https://www.youtube.com/watch?v=dXb0mEJgJZM]]></content>
+      <url>%2F2017%2F11%2F19%2Fcjjllm22q000yldbad1yisavq%2F</url>
+      <content type="text"><![CDATA[默认状态下按⌘+N会打开多个窗口 解决方法Step1: 在Sketch中勾选View - Show Tab Bar Step2:勾选 设置 - Dock - 打开文稿时首选标签页 - 始终 完成回到Sketch，按⌘+N，新的文稿会在新标签栏中显示 视频链接https://www.youtube.com/watch?v=dXb0mEJgJZM]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[博客复活！]]></title>
-      <url>%2F2017%2F11%2F08%2F%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB%EF%BC%81%2F</url>
+      <url>%2F2017%2F11%2F08%2Fcjjllm22s0012ldba5vdbf5wm%2F</url>
       <content type="text"></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[最近几幅插图]]></title>
-      <url>%2F2017%2F06%2F24%2F%E6%9C%80%E8%BF%91%E5%87%A0%E5%B9%85%E6%8F%92%E5%9B%BE%2F</url>
+      <url>%2F2017%2F06%2F24%2Fcjjllm22z001hldba93zs4s6b%2F</url>
       <content type="text"><![CDATA[地震APP也快做好了。中途数据丢失了一波- -]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[又一部视频]]></title>
-      <url>%2F2017%2F06%2F10%2F%E5%8F%88%E4%B8%80%E9%83%A8%E8%A7%86%E9%A2%91%2F</url>
-      <content type="text"><![CDATA[大三下学期的专业课结束了，又拍了部视频，是关于江汉大学原石工作室的宣传片。这次同罗瑞强、刘丽丽合作。 了解更多，请Click入「阅读全文」 关于视频这次我尝试使用FCPX剪接+AE特效+AU调音的搭配，发现FCPX用来剪片实在是太好用了！尤其是剪这种日常片。当然，特效片还是要用AE剪。 BGM 讲真做这次视频的过程并不愉快，做事太拖拉了，之前想的效果大部分都没做到。 比如拍摄高速旋转的机器，真正拍摄的时候发现对不准焦，拍不出来； 还有采访的背景位置也没找好，想找一些比较纯色的背景的，结果是草草的在工作室找个位置就开始采访了； 说到采访，录制的音质极度低质。还是因为草率的采访，导致噪音爆炸，后期花了九牛二虎之力+跪舔负责人让他重录一小段才稍微正常了一点。 还有前期的策划也是狗屎，各种准备不充分，台词也是我疯狂挤牙膏挤出来的。根本不能看啊- -队友各种划水，一个是隐形人，一个负责联系工作室那边+拍摄（拍摄质量各种滑稽，让他拍好点就甩一句「我不是专业拍摄的，技术很渣」 - -牛逼），扔下我一个疯狂后期修正抢救…在剪片的时候有点感觉像在吔屎，但我亦不断提示自己「没修好是我菜，我的锅，要努力搞好」… 怀念当日说起来还是怀念去年国庆那时候的拍摄组，李俐颖的拍摄，帅哥李一润的高超演技，边做边欣赏帅哥美女…大家一起搬电脑在工作室剪片，互相交流的团队合作，比这次的一个人在宿舍里吔闷屎有乐趣多了- - 每个人都全身心投入工作，发挥自己的特长。擅长策划的就多想想剧本、画画分镜。擅长拍摄的就拍点有创意的高质量镜头，拍摄也严格按照分镜走，长得帅的去当演员，擅长剪辑的就后面多花点时间研究剪辑。。。每个人都很有干劲，都想把视频搞好。。 相比这次互相划水，各种拖延- -唉。。毕业设计都不知道搞什么了，认识的人不多，都是爱乱玩的，真的有共同话题的一个都没= =要是再有一次完整的团队合作该多好！]]></content>
+      <url>%2F2017%2F06%2F10%2Fcjjllm22t0014ldbakl9tqpqa%2F</url>
+      <content type="text"><![CDATA[大三下学期的专业课结束了，又拍了部视频，是关于江汉大学原石工作室的宣传片。这次同罗瑞强、刘丽丽合作。 关于视频这次我尝试使用FCPX剪接+AE特效+AU调音的搭配，发现FCPX用来剪片实在是太好用了！尤其是剪这种日常片。当然，特效片还是要用AE剪。 BGM 讲真做这次视频的过程并不愉快，做事太拖拉了，之前想的效果大部分都没做到。 比如拍摄高速旋转的机器，真正拍摄的时候发现对不准焦，拍不出来； 还有采访的背景位置也没找好，想找一些比较纯色的背景的，结果是草草的在工作室找个位置就开始采访了； 说到采访，录制的音质极度低质。还是因为草率的采访，导致噪音爆炸，后期花了九牛二虎之力+跪舔负责人让他重录一小段才稍微正常了一点。 还有前期的策划也是狗屎，各种准备不充分，台词也是我疯狂挤牙膏挤出来的。根本不能看啊- -队友各种划水，一个是隐形人，一个负责联系工作室那边+拍摄（拍摄质量各种滑稽，让他拍好点就甩一句「我不是专业拍摄的，技术很渣」 - -牛逼），扔下我一个疯狂后期修正抢救…在剪片的时候有点感觉像在吔屎，但我亦不断提示自己「没修好是我菜，我的锅，要努力搞好」… 怀念当日说起来还是怀念去年国庆那时候的拍摄组，李俐颖的拍摄，帅哥李一润的高超演技，边做边欣赏帅哥美女…大家一起搬电脑在工作室剪片，互相交流的团队合作，比这次的一个人在宿舍里吔闷屎有乐趣多了- - 每个人都全身心投入工作，发挥自己的特长。擅长策划的就多想想剧本、画画分镜。擅长拍摄的就拍点有创意的高质量镜头，拍摄也严格按照分镜走，长得帅的去当演员，擅长剪辑的就后面多花点时间研究剪辑。。。每个人都很有干劲，都想把视频搞好。。 相比这次互相划水，各种拖延- -唉。。毕业设计都不知道搞什么了，认识的人不多，都是爱乱玩的，真的有共同话题的一个都没= =要是再有一次完整的团队合作该多好！]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[忙到踢脚之最近三件事]]></title>
-      <url>%2F2017%2F05%2F30%2F%E5%BF%99%E5%88%B0%E8%B8%A2%E8%84%9A%E4%B9%8B%E6%9C%80%E8%BF%91%E4%B8%89%E4%BB%B6%E4%BA%8B%2F</url>
-      <content type="text"><![CDATA[放假前（6月底）三件事：1.地震APP设计比赛2.驾照3.剪辑原石视频 稍微像样点 了解更多，请Click入「阅读全文」 同时还要应对3门垃圾选修课的on9作业+偶然出现的网店P图这么忙的我居然还有时间更新HEXO]]></content>
+      <url>%2F2017%2F05%2F30%2Fcjjllm22u0016ldbab85exckm%2F</url>
+      <content type="text"><![CDATA[放假前（6月底）三件事：1.地震APP设计比赛2.驾照3.剪辑原石视频 稍微像样点 同时还要应对3门垃圾选修课的on9作业+偶然出现的网店P图这么忙的我居然还有时间更新HEXO]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[脑子一热]]></title>
-      <url>%2F2017%2F05%2F19%2F%E8%84%91%E5%AD%90%E4%B8%80%E7%83%AD%2F</url>
-      <content type="text"><![CDATA[脑子一热买了MC 明明就玩过几回。。现在玩不了LOL总感觉少了点什么 了解更多，请Click入「阅读全文」 →最近打算参加UICN的一个活动，做一款关于地震的APP 目前做了一点原型图，大概是想做一点MD风格 我会keep住update]]></content>
+      <url>%2F2017%2F05%2F19%2Fcjjllm235001sldbavhqlgjvk%2F</url>
+      <content type="text"><![CDATA[脑子一热买了MC 明明就玩过几回。。现在玩不了LOL总感觉少了点什么 →最近打算参加UICN的一个活动，做一款关于地震的APP 目前做了一点原型图，大概是想做一点MD风格 我会keep住update]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Mac上尝试更新HEXO]]></title>
-      <url>%2F2017%2F05%2F16%2FMac%E4%B8%8A%E5%B0%9D%E8%AF%95%E6%9B%B4%E6%96%B0HEXO%2F</url>
-      <content type="text"><![CDATA[莫名其妙搭建WordPress失败，还是Hexo好啊 简单方便- -使用MacDown更新！附上两幅插画。 了解更多，请Click入「阅读全文」]]></content>
+      <url>%2F2017%2F05%2F16%2Fcjjllm2280005ldbab294yai0%2F</url>
+      <content type="text"><![CDATA[莫名其妙搭建WordPress失败，还是Hexo好啊 简单方便- -使用MacDown更新！附上两幅插画。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[登上新大陆！WordPress！]]></title>
-      <url>%2F2017%2F03%2F10%2F%E7%99%BB%E4%B8%8A%E6%96%B0%E5%A4%A7%E9%99%86%EF%BC%81WordPress%EF%BC%81%2F</url>
+      <url>%2F2017%2F03%2F10%2Fcjjllm232001nldbayzfludso%2F</url>
       <content type="text"><![CDATA[新站点 http://www.pudge.ga/ 最近FinalSpeed加速SS有点问题，索性换了内存占用更低的Kcptun，顺便能加速手机的速度。 同时亦架设了一个WordPress博客，研究了大半天，失败了好多次！最后看到Welcome真的非常兴奋！ 使用http://www.freenom.com 的免费域名。目前准备将Hexo的记录转移到新站点！ 最后一篇Hexo博文！]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[新插画]]></title>
-      <url>%2F2017%2F03%2F03%2F%E6%96%B0%E6%8F%92%E7%94%BB2%E5%B9%85%2F</url>
+      <url>%2F2017%2F03%2F03%2Fcjjllm22x001dldbap9l5c43g%2F</url>
       <content type="text"><![CDATA[花了一两个月学了一点Ai技术。最近喜欢这种插画多过UI，因为感觉UI要考虑的东西太多了。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[新年快乐！]]></title>
-      <url>%2F2017%2F01%2F01%2F%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81%2F</url>
-      <content type="text"><![CDATA[2017新年快乐！真是一眨眼的时间大三上学期就过去了，真的很快，也很忙。11月多开始代别人的设计作业，赚了一点学费。。。忙起来的时候真是一天只有吃饭，睡觉，做作业。。。同时我最近也点了几个技能点给AI，学会了一点插画的技法。。。 查看图片，请Click入「阅读全文」啦！ 寒假期间就无法POST了（换电脑之后不知道怎么PO上博客。。） 农历新年的时候我应该还会画一些春节元素的插图，ICON KIT之类的东西！乐在其中啊哈哈~]]></content>
+      <url>%2F2017%2F01%2F01%2Fcjjllm22w001bldbam3soi0lz%2F</url>
+      <content type="text"><![CDATA[2017新年快乐！真是一眨眼的时间大三上学期就过去了，真的很快，也很忙。11月多开始代别人的设计作业，赚了一点学费。。。忙起来的时候真是一天只有吃饭，睡觉，做作业。。。同时我最近也点了几个技能点给AI，学会了一点插画的技法。。。 寒假期间就无法POST了（换电脑之后不知道怎么PO上博客。。） 农历新年的时候我应该还会画一些春节元素的插图，ICON KIT之类的东西！乐在其中啊哈哈~]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[皮诺曹的网页设计]]></title>
-      <url>%2F2016%2F12%2F05%2F%E7%9A%AE%E8%AF%BA%E6%9B%B9%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%2F</url>
-      <content type="text"><![CDATA[说好的网页设计，本来几个星期前已经做完大概，主要因为那服务里面的6个icon一直没时间想。而且以前一直用PS做icon，最近学习了一点AI，这次是用AI做的，感觉AI里做这些还是比PS好用啊。。 为不影响版面，请Click入「阅读全文」 在Behance上浏览查看完整项目：https://www.behance.net/gallery/45982853/_]]></content>
+      <url>%2F2016%2F12%2F05%2Fcjjllm234001pldba95diir43%2F</url>
+      <content type="text"><![CDATA[说好的网页设计，本来几个星期前已经做完大概，主要因为那服务里面的6个icon一直没时间想。而且以前一直用PS做icon，最近学习了一点AI，这次是用AI做的，感觉AI里做这些还是比PS好用啊。。 在Behance上浏览查看完整项目：https://www.behance.net/gallery/45982853/_]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[感谢David Damour的邀请]]></title>
-      <url>%2F2016%2F12%2F04%2F%E2%80%9C%E6%84%9F%E8%B0%A2David-Damour%E7%9A%84%E9%82%80%E8%AF%B7%2F</url>
+      <url>%2F2016%2F12%2F04%2Fcjjllm22l000nldbaecgg9dfp%2F</url>
       <content type="text"><![CDATA[最近终于获得Dribbble的邀请了，感谢David Damour的邀请啦！制作了一个蛋糕作为First shot 网页下次POST]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[最近搞的UI]]></title>
-      <url>%2F2016%2F12%2F03%2F%E6%9C%80%E8%BF%91%E6%90%9E%E7%9A%84UI%2F</url>
-      <content type="text"><![CDATA[最近忙碌+吃土中，帮外校大四做了一小套UI。。长图，为不影响版面，请Click入「阅读全文」 下次POST个网页出来，另外极度期待ADOBE XD的Win版，官方说2016年必出，不要12月31号先出啊。。]]></content>
+      <url>%2F2016%2F12%2F03%2Fcjjllm231001lldbaj7fm5u0c%2F</url>
+      <content type="text"><![CDATA[最近忙碌+吃土中，帮外校大四做了一小套UI。。 下次POST个网页出来，另外极度期待ADOBE XD的Win版，官方说2016年必出，不要12月31号先出啊。。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[本周的Voxel! (十一月07)]]></title>
-      <url>%2F2016%2F11%2F07%2F%E6%9C%AC%E5%91%A8%E7%9A%84Voxel-Nov-07%2F</url>
-      <content type="text"><![CDATA[今天是星期一 从今开始一周的Voxel！就放在一篇POST上啦！ 上推特转了一下 发现别人做得都很好看啊。。都很精致，而且很多细节~~ （参考Trove的无头骑士Revenate）本来还想给Trove做点spear武器啥的，没有什么好想法只好搁置了。。:-( 今天开始试下做现代场景！ 现代街道的日与夜。。花了两天做这个 建模到上色都花不少时间啊 还有调渲染的参数~~白天似乎比夜晚的好看也..]]></content>
+      <url>%2F2016%2F11%2F07%2Fcjjllm230001jldbar6h1njhy%2F</url>
+      <content type="text"><![CDATA[今天是星期一 从今开始一周的Voxel！就放在一篇POST上啦！ 上推特转了一下 发现别人做得都很好看啊。。都很精致，而且很多细节~~参考Trove的无头骑士Revenate）本来还想给Trove做点spear武器啥的，没有什么好想法只好搁置了。。:- 今天开始试下做现代场景！ 现代街道的日与夜。。花了两天做这个 建模到上色都花不少时间啊 还有调渲染的参数~~白天似乎比夜晚的好看也..]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[今天的战士斗巨龙！]]></title>
-      <url>%2F2016%2F11%2F06%2F%E4%BB%8A%E5%A4%A9%E7%9A%84%E6%88%98%E5%A3%AB%E6%96%97%E5%B7%A8%E9%BE%99%EF%BC%81%2F</url>
+      <url>%2F2016%2F11%2F06%2Fcjjllm22q000wldbatpqa4nq9%2F</url>
       <content type="text"><![CDATA[尝试了一下做巨龙，好难做啊！明天试下做新的人物动态。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[今天的卫兵VS大眼怪！]]></title>
-      <url>%2F2016%2F11%2F05%2F%E4%BB%8A%E5%A4%A9%E7%9A%84%E5%8D%AB%E5%85%B5VS%E5%A4%A7%E7%9C%BC%E6%80%AA%EF%BC%81%2F</url>
+      <url>%2F2016%2F11%2F05%2Fcjjllm22p000tldba23lut54f%2F</url>
       <content type="text"><![CDATA[天空城最后一名卫兵！到底能否击败大眼怪？！ 其实击败不了啦！天空城还是会沦陷，因为我没给卫兵设定特殊能力啊！只有普通的剑盾~~ (话说大眼怪的三个激光炮好违和。。)]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[一个小车]]></title>
-      <url>%2F2016%2F11%2F04%2F%E4%B8%80%E4%B8%AA%E5%B0%8F%E8%BD%A6%2F</url>
+      <url>%2F2016%2F11%2F04%2Fcjjllm22n000rldbao6bepxol%2F</url>
       <content type="text"><![CDATA[今天做的双层巴士！~ 玻璃还是不会做也..]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[我的第一个magicavoxel作品！]]></title>
-      <url>%2F2016%2F11%2F04%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAmagicavoxel%E4%BD%9C%E5%93%81%EF%BC%81%2F</url>
-      <content type="text"><![CDATA[发现这个软件很好玩，而且只有几MB！太神奇了！ 软件名叫Magicavoxel，能够在里面创造最大126126126的立方体！可以使用HSV/RGB颜色，而且能渲染出发光、玻璃、不锈钢的质感！]]></content>
+      <url>%2F2016%2F11%2F04%2Fcjjllm22v0018ldbaxma5tfet%2F</url>
+      <content type="text"><![CDATA[发现这个软件很好玩，而且只有几MB！太神奇了！ 软件名叫Magicavoxel，能够在里面创造最大126*126*126的立方体！可以使用HSV/RGB颜色，而且能渲染出发光、玻璃、不锈钢的质感！]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[皮具品牌LOGO设计(课堂作业！)]]></title>
-      <url>%2F2016%2F10%2F28%2FLogo%20for%20Pinocchio%2F</url>
+      <url>%2F2016%2F10%2F28%2Fcjjllm2250002ldbagkvpt798%2F</url>
       <content type="text"><![CDATA[手工皮革制品工作室的LOGO 专业课的作业：设计一个品牌VI。一个玩皮革的同学提议给他做个皮革作坊的品牌形象策划，那就一起做一个吧！ 因为是皮革手工作坊，所以同学想名字时用了匹诺曹的另一个译名：皮诺曹。 另外用较圆润的字体来方便在皮革上印制，太细的线条不明显。而且粗线条比较厚重，和皮革比较搭配。颜色选取与真实皮革相近的的 枣红色(#5d2410) 来产生暗示。 动态LOGO演绎 套一个模版看看]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[一幅卡通画]]></title>
-      <url>%2F2016%2F10%2F19%2F%E4%B8%80%E5%B9%85%E5%8D%A1%E9%80%9A%E7%94%BB%2F</url>
+      <url>%2F2016%2F10%2F19%2Fcjjllm22o000sldbayodt5l6g%2F</url>
       <content type="text"><![CDATA[帮啊姐画的一张卡通画。很久没玩数位板了，当作娱乐一下吧！哈哈:D 软件: PaintTool SAI数位板: Wacom CTL-671]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[GOOGLE animation]]></title>
-      <url>%2F2016%2F10%2F07%2FGOOGLE-animation%2F</url>
+      <url>%2F2016%2F10%2F07%2Fcjjllm2210000ldbanm9aotac%2F</url>
       <content type="text"><![CDATA[使用修建路径来完成的Google动画，似乎一开始四个点的动态还需要考究。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[New stuff]]></title>
-      <url>%2F2016%2F09%2F20%2FNew-stuff%2F</url>
-      <content type="text"><![CDATA[一个社交软件的动效个人认为后面的Comment按钮没有弄好，而且打字框里面字体的颜色也应该浅一点Thanks:http://www.unsplash.com]]></content>
+      <url>%2F2016%2F09%2F20%2Fcjjllm2290006ldba1d7f29dz%2F</url>
+      <content type="text"><![CDATA[一个社交软件的动效个人认为后面的Comment按钮没有弄好，而且打字框里面字体的颜色也应该浅一点 Thanks:http://www.unsplash.com]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[daily ui]]></title>
-      <url>%2F2016%2F09%2F17%2Fdaily-ui%2F</url>
+      <url>%2F2016%2F09%2F17%2Fcjjllm22h000fldba2dnyhu6r%2F</url>
       <content type="text"><![CDATA[字体好怪。。。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Steam热卖游戏在手机上的呈现]]></title>
-      <url>%2F2016%2F09%2F12%2FSteam%20app%2F</url>
+      <url>%2F2016%2F09%2F12%2Fcjjllm22a0007ldbaa208w8ej%2F</url>
       <content type="text"><![CDATA[似乎没有什么设计感]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Uploading]]></title>
-      <url>%2F2016%2F09%2F11%2FUploading%2F</url>
+      <url>%2F2016%2F09%2F11%2Fcjjllm22c000cldbay55di9ni%2F</url>
       <content type="text"><![CDATA[]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[On/Off Switch]]></title>
-      <url>%2F2016%2F09%2F10%2FSwitch-Effect%2F</url>
+      <url>%2F2016%2F09%2F10%2Fcjjllm22b000aldbarxyr5xn8%2F</url>
       <content type="text"><![CDATA[小动效练习。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[test]]></title>
-      <url>%2F2016%2F09%2F09%2Ftest%2F</url>
+      <url>%2F2016%2F09%2F09%2Fcjjllm22k000lldbas3als4py%2F</url>
       <content type="text"><![CDATA[Try to upload photo PudgeBlog link]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[my new post]]></title>
-      <url>%2F2016%2F09%2F08%2Fmy-new-post%2F</url>
+      <url>%2F2016%2F09%2F08%2Fcjjllm22j000jldba6afr4c9l%2F</url>
       <content type="text"></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>%2F2016%2F09%2F08%2Fhello-world%2F</url>
+      <url>%2F2016%2F09%2F08%2Fcjjllm22i000hldbatjeoxyhb%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
     </entry>
 

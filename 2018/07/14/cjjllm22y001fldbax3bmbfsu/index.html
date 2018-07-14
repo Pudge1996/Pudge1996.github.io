@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang=zh-Hans>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="null">
+  <meta name="keywords" content="undefined">
+  
+    <link rel="icon" href="">
+  
+    
+  <title>时隔差不多一年，博客被重新拾起！ | 小东的博客</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-container">
+    <a class='logo' href="/">
+      <span>小东的博客</span>
+    </a>
+    <ul class="right-header">
+      
+        <li class="nav-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/about" class="item-link">关于</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/archives" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/tags" class="item-link">标签</a>
+          
+        </li>
+      
+    </ul>
+  </div>
+</header>
+
+  <main id='post'>
+  <div class="content">
+    <article>
+        <section class="content markdown-body">
+          <h1>时隔差不多一年，博客被重新拾起！</h1>
+          <div class='post-meta'>
+            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/07/14</time>
+            
+            
+              | 
+                  <i class="fa fa-tag" aria-hidden="true"></i>
+                
+               
+  <a href="/tags/#日常" class='tag'>日常</a>
+
+
+            
+          </div>
+          <p>由于时间久远，我尝试回忆起无法更新的原因：那时候好像重装了电脑，各种环境都没安装上，当我再装 Hexo 时已经返回错误提示了，并且由于我技艺不精，乱搞一通好像更麻烦了，到后面直接运行 hexo -d 都直接自动重启！所以我便抛弃了我的博客，没有再管他，今天我抱着试一试看看能不能救活我的博客，不行就算的心态打开了 Hexo 的官网。。凝视着下面的几行命令。。</p>
+<p>好吧，当我在终端运行 npm install hexo-cli -g 时就报错了，看了下文档，安装 xcode 之后就能安装成功。<br>cd blog 之后运行 npm install ，我之前好像装过，只是更新了一下 npm，然后运行 hexo server ，已经可以在本地正常预览，但是 hexo deploy 报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Error: fatal: Unable to create &apos;/Volumes/Blog/.deploy_git/.git/index.lock&apos;: File exists.</div></pre></td></tr></table></figure></p>
+<p>提示无法创建 index.lock ，因为已经存在，那我就上网搜了下命令行删除文件的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -f .deploy_git/.git/index.lock</div></pre></td></tr></table></figure></p>
+<p><strong>然后 Hexo -deploy，然后居然成功了！Hexo -g 之后刷新网站，居然更新了！</strong></p>
+<p>至此我的 Hexo 已被修复，以后又能愉快地更新博客，安装主题瞎折腾拉！<br>复活博客对我来说意义重大！因为这算是我大学生活的一部分。。从2016年9月的第一篇博客<a href="https://pudge1996.github.io/2016/09/08/hello-world/">“Hello World”</a>开始我摸鱼的东西就放在博客上。<br>在 Hexo 失效这段时间我用 <a href="https://medium.com/@Pudge1996" target="_blank" rel="external">Medium</a> 来写一些文章，但没有在自己博客上那么密。好吧，现在我要将 Medium 上的文章移植过来（根据时间线），将以前的 Tags, categories, 图床都整理一遍，以后继续在这折腾~</p>
+
+        </section>
+    </article>
+    
+        
+  </div>
+  <aside>
+    
+  </aside>
+</main>
+
+
+
+  <footer>
+  <div class="copyright">
+    <div>
+      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
+    </div>
+    <div>
+      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="/lib/in-view.min.js"></script>
+<script src="/lib/lodash.min.js"></script>
+<script>
+  var isDown = true
+  var oldY = 0
+  inView.offset(50)
+
+  document.body.addEventListener('touchstart', function(){});
+  
+  window.addEventListener('scroll', _.throttle(e => {
+    var currentY = window.scrollY
+    if((oldY - currentY) < 0) {
+      isDown = true
+    } else {
+      isDown = false
+    }
+    oldY = currentY
+  }, 250))
+
+  $("article img").each(function() {
+      var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
+      $(this).wrapAll(strA);
+  });
+
+  $('.toc-link').each(function() {
+      var href = $(this).attr("href");
+      
+      inView(href).on('exit', () => {
+        if (isDown) {
+          handleActive(href)
+        }
+      })
+
+      inView(href).on('enter', () => {
+        if (!isDown) {
+          handleActive(href)
+        }
+      })
+
+      this.onclick = function(e) {
+        var pos = $(href).offset().top - 10;
+        $("html,body").animate({scrollTop: pos}, 300);
+        setTimeout(() => {
+          handleActive(href)
+        }, 350)
+        return false
+      }
+  })
+
+  function handleActive(href) {
+    document.querySelectorAll('.toc-link').forEach(elm => {
+      elm.classList.remove('active')
+    })
+    document.querySelector(".toc [href='"+ href +"']").classList.add('active')
+  }
+</script>
+<script src="/lib/jquery.fancybox.min.js"></script>
+
+
+</body>
+</html>
