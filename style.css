@@ -3,7 +3,7 @@ html {
   background-color: #f4f5f5; }
 
 body {
-  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,10 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #909090; }
+  color: #909090;
+  transition: 0.3s color, 0.3s border-color; }
+  a:hover:not(.paging) {
+    color: #007fff; }
 
 main {
   flex-grow: 1;
@@ -38,9 +41,9 @@ footer .copyright {
 header {
   background: #fff;
   border-bottom: 1px solid #f1f1f1;
-  color: #909090;
   margin-bottom: 15px;
-  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
+  color: #909090; }
   header .header-container {
     max-width: 1000px;
     padding: 0 16px;
@@ -60,7 +63,9 @@ header {
         display: inline-block;
         padding: 0 18px; }
         header .header-container .right-header li:last-child {
-          padding-right: 25px; }
+          padding-right: 0px; }
+        header .header-container .right-header li:hover {
+          color: red; }
       header .header-container .right-header .nav-item .active {
         color: #007fff; }
 
@@ -79,6 +84,156 @@ header {
     right: -4px; }
   .post-meta .tag:hover::after {
     color: #6E7173; }
+
+#index li {
+  list-style: none; }
+
+#index .posts-list {
+  width: 66%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 120%;
+  align-self: flex-start; }
+  #index .posts-list section {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(178, 186, 194, 0.15); }
+    #index .posts-list section a {
+      color: #404040; }
+      #index .posts-list section a:hover {
+        color: #007fff; }
+      #index .posts-list section a h3 {
+        margin: 0 0 5px;
+        font-size: 25px;
+        font-weight: 700;
+        transition: 0.3s color, 0.3s border-color; }
+    #index .posts-list section .post-img {
+      margin-bottom: 5px;
+      transition: 0.3s color, 0.3s border-color; }
+      #index .posts-list section .post-img img {
+        width: 100%;
+        vertical-align: middle; }
+    #index .posts-list section .post-content {
+      color: #a3a3a3;
+      margin-bottom: 8px; }
+      #index .posts-list section .post-content * {
+        margin: 0;
+        padding: 0;
+        text-align: justify; }
+    #index .posts-list section .post-meta {
+      font-size: 14px;
+      font-weight: 200;
+      color: #6E7173; }
+      #index .posts-list section .post-meta .seperator {
+        padding: 0 2px; }
+
+#index aside {
+  position: sticky;
+  top: 15px;
+  flex-basis: 34%; }
+  #index aside > div {
+    margin-left: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 2px; }
+    #index aside > div h1 {
+      font-size: 1.1em;
+      padding-left: 20px;
+      margin: 0;
+      height: 45px;
+      line-height: 45px;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(178, 186, 194, 0.15);
+      font-weight: normal; }
+    #index aside > div > .content {
+      color: #909090;
+      padding: 20px;
+      font-size: 1em; }
+      #index aside > div > .content a {
+        color: #909090;
+        transition: 0.3s color, 0.3s border-color; }
+        #index aside > div > .content a:hover {
+          color: #007fff; }
+  #index aside .search form input {
+    background: #fff 8px 9px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
+    padding: 7px 11px 7px 28px;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(178, 186, 194, 0.3);
+    outline: none;
+    font-size: 14px; }
+  #index aside .avatar {
+    overflow: hidden; }
+    #index aside .avatar img {
+      display: block;
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+      object-position: center center; }
+  #index aside .categories .category-list {
+    padding-left: 0;
+    margin: 0; }
+  #index aside .categories .category-list-child {
+    padding-left: 1.3em; }
+    #index aside .categories .category-list-child li {
+      list-style: disc; }
+  #index aside .links a {
+    display: block; }
+
+.paging {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+  padding-top: 1em; }
+  .paging .paging-container {
+    display: flex;
+    justify-content: space-between;
+    width: 78%; }
+    .paging .paging-container > div {
+      display: inline-block;
+      border-radius: 2px;
+      font-size: 14px;
+      transition: 0.3s color, 0.3s border-color; }
+      .paging .paging-container > div a {
+        display: inline-block;
+        padding: 5px 15px; }
+      .paging .paging-container > div:hover {
+        border-color: #999; }
+    .paging .paging-container .page-prev {
+      border: 1px solid #ddd; }
+    .paging .paging-container .page-next {
+      text-align: right;
+      border: 1px solid #ddd; }
+
+@media (min-width: 1032px) {
+  #index {
+    width: 1000px; }
+  .paging {
+    width: 1000px; } }
+
+@media (max-width: 1032px) {
+  .paging {
+    width: 100%;
+    box-sizing: border-box; } }
+
+@media (max-width: 700px) {
+  #index {
+    flex-direction: column; }
+    #index .posts-list {
+      order: 1;
+      width: 100%; }
+    #index aside {
+      position: static;
+      order: 0; }
+      #index aside > div {
+        margin-left: 0; }
+  .paging .paging-container {
+    width: 100%; } }
 
 #archive {
   width: 1000px; }
@@ -110,7 +265,7 @@ header {
           #archive .content .year-list ul li a {
             margin-left: 10px;
             font-weight: normal;
-            transition: 0.3s color; }
+            transition: 0.3s color, 0.3s border-color; }
             #archive .content .year-list ul li a:hover {
               color: #007fff; }
 
@@ -136,7 +291,7 @@ header {
     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     box-sizing: border-box;
-    width: 100%;
+    width: 120%;
     padding: 20px 25px;
     border-bottom: 1px solid rgba(178, 186, 194, 0.15);
     border-bottom-left-radius: 0;
@@ -199,7 +354,7 @@ header {
           #post aside .toc-container ol.toc .toc-level-3 > ol {
             padding-left: 2em; }
         #post aside .toc-container ol a {
-          transition: 0.3s color; }
+          transition: 0.3s color, 0.3s border-color; }
           #post aside .toc-container ol a:hover, #post aside .toc-container ol a.active {
             color: #007fff; }
 
@@ -622,7 +777,7 @@ header {
   box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   box-sizing: border-box;
-  flex-basis: 66%;
+  width: 120%;
   align-self: flex-start; }
   #index .posts-list section {
     padding: 20px 25px;
@@ -635,10 +790,10 @@ header {
         margin: 0 0 5px;
         font-size: 25px;
         font-weight: 700;
-        transition: 0.3s color; }
+        transition: 0.3s color, 0.3s border-color; }
     #index .posts-list section .post-img {
       margin-bottom: 5px;
-      transition: 0.3s color; }
+      transition: 0.3s color, 0.3s border-color; }
       #index .posts-list section .post-img img {
         width: 100%;
         vertical-align: middle; }
@@ -682,7 +837,7 @@ header {
       font-size: 1em; }
       #index aside > div > .content a {
         color: #909090;
-        transition: 0.3s color; }
+        transition: 0.3s color, 0.3s border-color; }
         #index aside > div > .content a:hover {
           color: #007fff; }
   #index aside .search form input {
@@ -720,12 +875,12 @@ header {
   .paging .paging-container {
     display: flex;
     justify-content: space-between;
-    width: 66%; }
+    width: 78%; }
     .paging .paging-container > div {
       display: inline-block;
       border-radius: 2px;
       font-size: 14px;
-      transition: 0.3s color; }
+      transition: 0.3s color, 0.3s border-color; }
       .paging .paging-container > div a {
         display: inline-block;
         padding: 5px 15px; }
@@ -788,7 +943,7 @@ header {
     border-radius: 20px;
     color: #404040;
     font-weight: 200;
-    transition: 0.3s color; }
+    transition: 0.3s color, 0.3s border-color; }
     #tags .tags a:hover, #tags .tags a:active,
     #tags .tags .tag:hover,
     #tags .tags .tag:active {
@@ -808,7 +963,7 @@ header {
     margin-left: 16px; }
     #tags .tag-list .post-preview h2.post-title {
       color: #404040;
-      transition: 0.3s color; }
+      transition: 0.3s color, 0.3s border-color; }
       #tags .tag-list .post-preview h2.post-title:hover {
         color: #007fff; }
 
